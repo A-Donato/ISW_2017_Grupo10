@@ -1,0 +1,2980 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/3332739511-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://www.startuplessonslearned.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://www.startuplessonslearned.com/2008/11/five-whys.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Lessons Learned - Atom" href="http://www.startuplessonslearned.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Lessons Learned - RSS" href="http://www.startuplessonslearned.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Lessons Learned - Atom" href="https://www.blogger.com/feeds/7533727264507128560/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Lessons Learned - Atom" href="http://www.startuplessonslearned.com/feeds/5706065594261700106/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='http://www.startuplessonslearned.com/2008/11/five-whys.html' property='og:url'/>
+<meta content='Five Whys' property='og:title'/>
+<meta content='Taiichi Ohno was one of the inventors of the Toyota Production System. His book Toyota Production System: Beyond Large-Scale Production  is ...' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Lessons Learned: Five Whys</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     LSU Modified
+Date:     7 Sep 2011
+Updated by: digital-telepathy
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#eec">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#333333">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#7b954b">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#7b766a">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#006699">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#0f92d4">
+<Variable name="titleBgColor" description="Page Header Background Color"
+type="color" default="#357">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#586">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarHeaderColor"
+description="Bottom Sidebar Title Color"
+type="color" default="#7b954b">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#006699">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#0f92d4">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% Arial, Helvetica, Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% Arial, Helvetica, Sans-serif">
+<Variable name="descriptionFont" description="Blog Description Font" type="font"
+default="normal normal 15px Georgia, 'Times New Roman', Times, serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% Arial, Helvetica, Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 36px Arial, Helvetica, Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#efe9db url('http://www.theleanstartup.com/images/blog/blog-bg.png') 0 0 repeat;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Arial, Helvetica, Sans-serif;
+color:#333333;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:980px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% Arial, Helvetica, Sans-serif;
+overflow:hidden;
+}
+#main-wrap1 {
+width:530px;
+float:left;
+margin:0;
+padding:0 40px 10px;
+color:#333333;
+font-size:13px;
+line-height:24px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+background:#FFFFFF url('http://www.theleanstartup.com/images/blog/grey-bar-white.png') 0 0 repeat-y;
+font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+#main-wrap2 {
+float:left;
+width:100%;
+padding:10px 0 0;
+}
+#main {
+position:relative;
+padding:0;
+}
+#sidebar-wrap {
+width:350px;
+float:right;
+margin:0;
+color:#666666;
+font-size:12px;
+line-height:18px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 4px;
+padding: 0 13px;
+}
+.main .Blog {
+margin: 0;
+padding: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #006699;
+}
+a:visited {
+color: #0f92d4;
+}
+a:hover {
+color: #0f92d4;
+text-decoration:none;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+padding:0;
+}
+#header h1 {
+position:relative;
+overflow:hidden;
+width:447px;
+height:57px;
+margin:0;
+padding:0;
+}
+#header h1 a,
+#header h1 a:link,
+#header h1 a:visited {
+display:block;
+position:relative;
+overflow:hidden;
+width:447px;
+height:0;
+margin:0;
+padding:57px 0 0 0;
+background:url('http://www.theleanstartup.com/images/blog/title-blog.png') 0 0 no-repeat;
+}
+#header .description {
+margin:0;
+padding:0;
+font: normal normal 15px Georgia, 'Times New Roman', Times, serif;
+text-shadow:1px 1px 2px #FFFFFF;
+color:#333;
+margin:0 0 10px 3px;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin:0;
+font-size:12px;
+line-height:18px;
+color:#7b766a;
+font-weight:normal;
+}
+.post {
+position:relative;
+overflow:hidden;
+margin:.3em 0 25px;
+padding:0;
+border-bottom:1px solid #B2B2B2;
+}
+.post h3 {
+margin:0 0 10px;
+line-height:1.5em;
+display:block;
+padding:2px 0 5px;
+color: #7b954b;
+font: normal bold 36px Arial, Helvetica, Sans-serif;
+border-bottom:1px dotted #b2b2b2;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #7b954b;
+}
+a.title-link:hover {
+background-color: #bbbbbb;
+color: #333333;
+}
+.post-body {
+position:relative;
+overflow:hidden;
+padding:0px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-size:13px;
+color:#333333;
+border:none;
+background: #e5f2f9 url('http://www.theleanstartup.com/images/blog/blockquote-left.png') 0 0 repeat-y;
+margin:0 0 10px 0;
+padding:15px 30px;
+}
+.post-footer {
+position:relative;
+overflow:hidden;
+clear:both;
+margin:0 0 2px 0;
+padding:5px 0;
+border-top:1px solid #e5e5e5 !important;
+border-bottom:1px solid #b2b2b2 !important;
+font-size:100%;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #456;
+}
+.post-footer a:hover {
+color: #234;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("http://www.blogblog.com/rounders/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("http://www.blogblog.com/rounders3/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #7b766a;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:0;
+padding-top:0px;
+padding-bottom:15px;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-bottom:2px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#333;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("http://www.blogblog.com/rounders3/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #333;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top:0;
+margin-right:15px;
+margin-bottom:.5em;
+margin-left:0;
+padding-top:8px;
+}
+.profile-link {
+background:url("http://www.blogblog.com/rounders3/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+position:relative;
+overflow:hidden;
+margin:0px;
+padding:0;
+}
+#sidebartop-wrap2 {
+padding:0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+display:none;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #ffffff;
+}
+#sidebartop a:visited {
+color: #ffffff;
+}
+#sidebar a {
+color: #006699;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #0f92d4;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+#sidebar {
+position:relative;
+overflow:hidden;
+}
+.sidebar .widget {
+margin:0 auto 20px;
+padding:0;
+}
+#sidebarbottom-wrap1 {
+background: #FFFFFF url('http://www.theleanstartup.com/images/blog/grey-bar-white.png') 0 0 repeat-y;
+margin:0 0 20px;
+padding:0 17px;
+}
+.sidebar h2 {
+display:none;
+}
+.sidebar .BlogArchive h2,
+.sidebar .PopularPosts h2,
+.sidebar #HTML3 h2 {
+display:block;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+margin:0;
+padding-top:0;
+padding-bottom:3px;
+margin-bottom:15px;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+#sidebar h2 {
+font-size:12px;
+color: #7b954b;
+margin:0 0 5px;
+}
+#lsu_book_cta {
+position:relative;
+overflow:hidden;
+width:350px;
+height:243px;
+}
+#lsu_book_cta a,
+#lsu_book_cta a:link,
+#lsu_book_cta a:visited {
+display:block;
+overflow:hidden;
+width:350px;
+height:0;
+padding:243px 0 0 0;
+margin:0 auto;
+background:url('http://www.theleanstartup.com/images/blog/buy-book.png') 0 0 no-repeat;
+}
+#lsu_book_cta a:hover,
+#lsu_book_cta a:active { background-position:0 -243px; }
+#lsu_twitter { margin-bottom:20px; }
+#lsu_about_the_author h4,
+#lsu_twitter h4 {
+color:#7b954b;
+font-size:20px;
+}
+#lsu_twitter h4 { font-size:14px; }
+#lsu_about_the_author,
+#lsu_design_by {
+position:relative;
+overflow:hidden;
+padding:0 0 5px;
+border-bottom:1px dotted #cccccc;
+}
+#lsu_design_by a,
+#lsu_design_by a:link,
+#lsu_design_by a:visited {
+display:block;
+position:relative;
+overflow:hidden;
+width:234px;
+height:35px;
+padding:48px 0 0 81px;
+margin:0;
+background:url('http://www.theleanstartup.com/images/blog/dt-logo-sml.png') 0 0 no-repeat;
+text-decoration:none;
+}
+#lsu_email_signup {
+color:#FFFFFF;
+padding:27px 27px 15px;
+background:#201f1d url('http://www.theleanstartup.com/images/blog/black-bar-grey.png') 0 0 repeat-y;
+}
+#lsu_email_signup h4 {
+text-align:left;
+margin:0 0 10px;
+padding:0;
+font-size:22px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-weight:normal;
+}
+#lsu_email_signup input#sll_subscribe_email {
+float:left;
+width:214px !important;
+height:23px;
+background:#FFFFFF url('http://www.theleanstartup.com/images/blog/email-gradient.png') 0 0 repeat-x;
+color:#666666;
+padding:5px;
+border:1px solid #FFFFFF;
+margin-right:3px;
+}
+#lsu_email_signup span#google_reader_span {
+display:block;
+padding:3px 0;
+background:url('http://www.theleanstartup.com/images/blog/form-or-bg.png') center center no-repeat;
+}
+#lsu_email_signup a#google_reader_link {
+position:relative;
+margin-left:5px;
+top:4px;
+}
+.BlogArchive ul.posts li a,
+.BlogArchive ul.posts li a:link,
+.BlogArchive ul.posts li a:visited {
+text-decoration:none;
+border-bottom:1px dotted;
+}
+#lsu_twitter a#twitter-link {
+text-align:left !important;
+padding:3px 0 3px 35px;
+background:url('http://www.theleanstartup.com/images/blog/bird.png') 0 0 no-repeat;
+}
+#lsu_about_the_author {
+position:relative;
+overflow:hidden;
+height:195px;
+background:url('http://www.theleanstartup.com/images/blog/about-the-author.png') 0 17px no-repeat;
+}
+#lsu_about_the_author .lsu-inner {
+width:195px;
+float:right;
+padding-top:55px;
+}
+#lsu_about_the_author h4 {
+margin:0 0 5px;
+}
+#lsu_events .item-title { font-weight:bold; }
+#lsu_events .item-date { color:#666; font-style:italic; }
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+display:none !important;
+}
+#footer-wrap2 {
+background:#335577 url("http://www2.blogblog.com/rounders3/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("http://www.blogblog.com/rounders3/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+.sidebar ul {
+margin-bottom:15px !important;
+}
+.sidebar ul li {
+padding-bottom:0 !important;
+padding-top:0 !important;
+}
+#lsu_sketches {
+width:100%;
+height:971px;
+position:absolute;
+top:0;
+left:0;
+background:url('http://www.theleanstartup.com/images/blog/sketches.png') center 0 no-repeat;
+z-index:-1;
+}
+/*Page Styles*/
+ul.contact-list {
+position:relative;
+padding:0 0 0 40px;
+list-style-type:none;
+}
+ul.contact-list li {
+position:relative;
+padding:0 0 0 20px;
+margin:0 0 10px 0;
+list-style-type:none;
+height:16px;
+line-height:16px;
+}
+ul.contact-list li.twitter { background:url('http://www.theleanstartup.com/images/blog/icon_twitter.png') 0 0 no-repeat; }
+ul.contact-list li.email { background:url('http://www.theleanstartup.com/images/blog/icon_email.png') 0 0 no-repeat; }
+ul.contact-list li.facebook { background:url('http://www.theleanstartup.com/images/blog/icon_facebook.png') 0 0 no-repeat; }
+ul.contact-list li.linkedin { background:url('http://www.theleanstartup.com/images/blog/icon_linkedin.png') 0 0 no-repeat; }
+ul#lsu_nav {
+position:relative;
+overflow:hidden;
+width:100%;
+padding:10px;
+margin:0 0 15px;
+list-style-type:none;
+text-align:left;
+}
+ul#lsu_nav li {
+position:relative;
+float:left;
+width:auto;
+padding:0;
+margin:0 25px 0 0;
+list-style-type:none;
+height:20px;
+line-height:20px;
+}
+ul#lsu_nav li a,
+ul#lsu_nav li a:link,
+ul#lsu_nav li a:visited {
+font-size:18px;
+font-weight:bold;
+color:#333;
+text-shadow:1px 1px 1px #FFF;
+text-decoration:none;
+}
+ul#lsu_nav li a:hover,
+ul#lsu_nav li a:active {
+text-decoration:underline;
+}
+div.lsu-social-bar {
+position:relative;
+overflow:hidden;
+margin-bottom:10px;
+}
+div.lsu-social-bar div{
+float:left;
+width:auto;
+margin:0;
+}
+div.lsu-social-bar div.gplusone{ margin-right:15px; }
+a#rss_feed {
+display: inline-block;
+height: 19px;
+line-height: 19px;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+margin-top: 5px;
+}
+a#rss_feed img {
+float: left;
+margin-right: 5px;
+}
+
+--></style>
+<script type='text/javascript'>
+  var _kmq = _kmq || [];
+  function _kms(u){
+    setTimeout(function(){
+      var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
+      s.src = u; f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/7fb275f5bdf00688265d2242dcfe493d692fe306.1.js');
+</script>
+<script src='http://apis.google.com/js/plusone.js' type='text/javascript'> {lang: 'en-US'} </script>
+<script async='true' data-sumo-site-id='3ac9c3365236835727603ccd41de8a2c0c398e58e89d3009e4d213fdfe3a9dde' src='//load.sumome.com/'> </script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7533727264507128560&amp;zx=693a17df-0adf-4f26-b235-3d86fce87e40' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=7533727264507128560&amp;zx=693a17df-0adf-4f26-b235-3d86fce87e40' rel='stylesheet'/></noscript>
+</head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d7533727264507128560\x26blogName\x3dLessons+Learned\x26publishMode\x3dPUBLISH_MODE_HOSTED\x26navbarType\x3dBLACK\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://www.startuplessonslearned.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://www.startuplessonslearned.com/\x26targetPostID\x3d5706065594261700106\x26blogPostOrPageUrl\x3dhttp://www.startuplessonslearned.com/2008/11/five-whys.html\x26vt\x3d6359921102009730034',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div id='outer-wrapper'>
+<div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://www.startuplessonslearned.com/'>
+<a href='http://www.startuplessonslearned.com/'>
+Lessons Learned
+</a>
+</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>by Eric Ries</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id='crosscol-wrapper' style='text-align:center'>
+<div class='crosscol section' id='crosscol'><div class='widget HTML' data-version='1' id='HTML2'>
+<div class='widget-content'>
+<ul id="lsu_nav">
+	<li><a href="http://www.startuplessonslearned.com">Home</a></li>
+	<li><a href="http://www.startuplessonslearned.com/2008/10/about-author.html">Bio</a></li>
+	<li><a href="http://www.startuplessonslearned.com/p/contact.html">Contact</a></li>
+</ul>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=crosscol' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+<div id='main-wrap1'><div id='main-wrap2'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Thursday, November 13, 2008</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template'>
+<a name='5706065594261700106'></a>
+<h3 class='post-title entry-title'>
+<a href='http://www.startuplessonslearned.com/2008/11/five-whys.html'>Five Whys</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='lsu-social-bar'>
+<div class='gplusone'>
+<g:plusone annotation='none' href='http://www.startuplessonslearned.com/2008/11/five-whys.html' size='medium'></g:plusone>
+</div>
+<div class='twitter'>
+<a class='twitter-share-button' data-count='horizontal' data-text='Lessons Learned: Five Whys' data-url='http://www.startuplessonslearned.com/2008/11/five-whys.html' data-via='ericries' href='http://twitter.com/share'>Tweet</a><script src='http://platform.twitter.com/widgets.js' type='text/javascript'></script>
+</div>
+<div class='facebook'>
+<div id='facebook_share_button'><iframe allowTransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?app_id=227233687291792&href=http://www.startuplessonslearned.com/2008/11/five-whys.html&send=false&layout=button_count&show_faces=false&width=100&action=like&font=arial&colorscheme=light&height=21' style='border:none; overflow:hidden; width:100px; height:21px;'></iframe></div>
+</div>
+</div>
+<div class='post-body entry-content'>
+Taiichi Ohno was one of the inventors of the Toyota Production System. His book <a name="evtst|a|0915299143" href="http://www.amazon.com/gp/product/0915299143?ie=UTF8&amp;tag=lessolearn01-20&amp;link_code=as3&amp;camp=211189&amp;creative=373489&amp;creativeASIN=0915299143" id="static_txt_preview">Toyota Production System: Beyond Large-Scale Production</a> is a fascinating read, even though it's decidedly non-practical. After reading it, you might not even realize that there are cars involved in Toyota's business. Yet there is one specific technique that I learned most clearly from this book: asking why five times.<br /><br />When something goes wrong, we tend to see it as a crisis and seek to blame. A better way is to see it as a learning opportunity. Not in the existential sense of general self-improvement. Instead, we can use the technique of asking why five times to get to the root cause of the problem.<br /><br />Here's how it works. Let's say you notice that your website is down. Obviously, your first priority is to get it back up. But as soon as the crisis is past, you have the discipline to have a post-mortem in which you start asking why:<br /><ol><li>why was the website down? The CPU utilization on all our front-end servers went to 100%</li><li>why did the CPU usage spike? A new bit of code contained an infinite loop!</li><li>why did that code get written? So-and-so made a mistake</li><li>why did his mistake get checked in? He didn't write a unit test for the feature</li><li>why didn't he write a unit test? He's a new employee, and he was not properly trained in TDD</li></ol>So far, this isn't much different from the kind of analysis any competent operations team would conduct for a site outage. The next step is this: you have to commit to make <span style="font-style: italic;">a proportional investment</span> in corrective action <span style="font-style: italic;">at every level of the analysis.</span> So, in the example above, we'd have to take five corrective actions:<br /><ol><li>bring the site back up</li><li>remove the bad code</li><li>help so-and-so understand why his code doesn't work as written</li><li>train so-and-so in the principles of TDD</li><li>change the new engineer orientation to include TDD</li></ol>I have come to believe that this technique should be used for all kinds of defects, not just site outages. Each time, we use the defect as an opportunity to find out what's wrong with our process, and make a small adjustment. By continuously adjusting, we eventually build up a robust series of defenses that prevent problems from happening. This approach is a the heart of breaking down the <a href="http://startuplessonslearned.blogspot.com/2008/10/engineering-managers-lament.html">"time/quality/cost pick two" paradox</a>, because these small investments cause the team to go faster over time.<br /><br />I'd like to point out something else about the example above. What started as a technical problem actually turned out to be a human and process problem. This is completely typical. Our bias as technologists is to over-focus on the product part of the problem, and five whys tends to counteract that tendency. It's why, at my previous job, we were able to get a new engineer completely productive on their first day. We had a great on-boarding process, complete with a mentoring program and a syllabus of key ideas to be covered. Most engineers would ship code to production on their first day. We didn't start with a great program like that, nor did we spend a lot of time all at once investing in it. Instead, five whys kept leading to problems caused by an improperly trained new employee, and we'd make a small adjustment. Before we knew it, we stopped having those kinds of problems altogether.<br /><br />It's important to remember the <span style="font-style: italic;">proportional investment</span> part of the rule above. It's easy to decide that when something goes wrong, a complete ground-up rewrite is needed. It's part of our tendency to over-focus on the technical and to over-react to problems. Five whys helps us keep our cool. If you have a severe problem, like a site outage, that costs your company tons of money or causes lots of person-hours of debugging, go ahead and allocate about that same number of person-hours or dollars to the solution. But always have a maximum, and always have a minimum. For small problems, just move the ball forward a little bit. Don't over-invest. If the problem recurs, that will give you a little more budget to move the ball forward some more.<br /><br />How do you get started with five whys? I recommend that you start with a specific team and a specific class of problems. For my first time, it was scalability problems and our operations team. But there is no right answer - I've run this process for many different teams. Start by having a single person be the five whys master. This person will run the post mortem whenever anyone on the team identifies a problem. Don't let them do it by themselves; it's important to get everyone who was involved with the problem (including those who diagnosed or debugged it) into a room together. Have the five why master lead the discussion, but they should have the power to assign responsibility for the solution to anyone in the room.<br /><br />Once that responsibility has been assigned, have that new person email <span style="font-style: italic;">the whole company</span> with the results of the analysis. This last step is difficult, but I think it's very helpful. Five whys should read like plain English. If they don't, you're probably obfuscating the real problem. The advantage of sharing this information widely is that it gives everyone insight into the kinds of problems the team is facing, but also insight into how those problems are being tackled. And if the analysis is airtight, it makes it pretty easy for everyone to understand why the team is taking some time out to invest in problem prevention instead of new features. If, on the other hand, it ignites a firestorm - that's good news too. Now you know you have a problem: either the analysis is not airtight, and you need to do it over again, or your company doesn't understand why what you're doing is important. Figure out which of these situations you're in, and fix it.<br /><br />Over time, here's my experience with what happens. People get used to the rhythm of five whys, and it becomes completely normal to make incremental investments. Most of the time, you invest in things that otherwise would have taken tons of meetings to decide to do. And you'll start to see people from all over the company chime in with interesting suggestions for how you could make things better. Now, everyone is learning together - about your product, process, and team. Each five whys email is a teaching document.<br /><br />Let me show you what this looked like after a few years of practicing five whys in the operations and engineering teams at IMVU. We had made so many improvements to our tools and processes for deployment, that it was pretty hard to take the site down. We had five strong levels of defense:<br /><ol><li>Each engineer had his/her own sandbox which mimicked production as close as  possible (whenever it diverged, we'd inevitably find out in a five whys shortly thereafter).</li><li>We had a comprehensive set of unit, acceptance, functional, and performance tests, and practiced TDD across the whole team. Our engineers built a series of test tags, so you could quickly run a subset of tests in your sandbox that you thought were relevant to your current project or feature.<br /></li><li>100% of those tests ran, via a continuous integration cluster, after every checkin. When a test failed, it would prevent that revision from being deployed.</li><li>When someone wanted to do a deployment, we had a completely automated system that we called the cluster immune system. This would deploy the change incrementally, one machine at a time. That process would continually monitor the health of those machines, as well as the cluster as a whole, to see if the change was causing problems. If it didn't like what was going on, it would reject the change, do a fast revert, and lock deployments until someone investigated what went wrong.</li><li>We had a comprehensive set of nagios alerts, that would trigger a pager in operations if anything went wrong. Because five whys kept turning up a few key metrics that were hard to set static thresholds for, we even had a dynamic prediction algorithm that would make forecasts based on past data, and fire alerts if the metric ever went out of its normal bounds. (You can even <a href="http://emiller.info/poisson.pdf">read a cool paper</a> one of our engineers wrote on this approach).<br /></li></ol>So if you had been able to sneak into the desk of any of our engineers, log into their machine, and secretly check in an infinite loop on some highly-trafficked page, here's what would have happened. Somewhere between 10 and 20 minutes later, they would have received an email with a message more-or-less like this: "Dear so-and-so, thank you so much for attempting to check in revision 1234. Unfortunately, that is a terrible idea, and your change has been reverted. We've also alerted the whole team to what's happened, and look forward to you figuring out what went wrong. Best of luck, Your Software." (OK, that's not <span style="font-style: italic;">exactly </span>what it said. But you get the idea)<br /><br />Having this series of defenses was helpful for doing five whys. If a bad change got to production, we'd have a built-in set of questions to ask: why didn't the automated tests catch it? why didn't the cluster immune system reject it? why didn't operations get paged? and so forth. And each and every time, we'd make a few more improvements to each layer of defense. Eventually, this let us do deployments to production <a href="http://startuplessonslearned.blogspot.com/2008/09/just-in-time-scalability.html">dozens of times every day</a>, without significant downtime or bug regressions.<br /><br />One last comment. When I tell this story to entrepreneurs and big-company types alike, I sometimes get this response: "well, sure, if you start out with all those great tools, processes and TDD from the beginning, that's easy! But my team is saddled with zillions of lines of legacy code and ... and ..." So let me say for the record: we didn't start with any of this at IMVU. We didn't even practice TDD across our whole team. We'd never heard of five whys, and we had plenty of "agile skeptics" on the team. By the time we started doing continuous integration, we had tens of thousands of lines of code, all not under test coverage. But the great thing about five whys is that it has a <a href="http://en.wikipedia.org/wiki/Pareto_principle">pareto principle</a> built right in. Because the most common problems keep recurring, your prevention efforts are automatically focused on the 20% of your product that needs the most help. That's also the same 20% that causes you to waste the most time. So five whys pays for itself awfully fast, and it makes life noticeably better almost right away. All you have to do is get started.<br /><br />So thank you, <a href="http://www.amazon.com/gp/product/0915299143?ie=UTF8&amp;tag=lessolearn01-20&amp;link_code=as3&amp;camp=211189&amp;creative=373489&amp;creativeASIN=0915299143">Taiichi Ohno</a>. I think you would have liked seeing all the waste we've been able to drive out of our systems and processes, all in an industry that didn't exist when you started your journey at Toyota. And I especially thank you for proving that this technique can work in one of the most difficult and slow-moving industries on earth: automobiles. You've made it hard for any of us to use the most pathetic excuse of all: surely, that can't work in <span style="font-style: italic;">my business</span>, right? If it can work for cars, it can work for you.<br /><br />What are you waiting for?
+<iframe allowTransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http://www.startuplessonslearned.com/2008/11/five-whys.html&layout=standard&show_faces=false&width=100&action=like&font=arial&colorscheme=light' style='border:none; overflow:hidden; width:450px; height:40px;'></iframe>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<script charset='utf-8' src='http://feeds.feedburner.com/~s/startup/lessons/learned?i=http://www.startuplessonslearned.com/2008/11/five-whys.html' type='text/javascript'></script>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+</span>
+<span class='post-timestamp'>
+</span>
+<span class='reaction-buttons'>
+</span>
+<span class='star-ratings'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-2124945044'>
+<a href='https://www.blogger.com/post-edit.g?blogID=7533727264507128560&postID=5706065594261700106&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://www.startuplessonslearned.com/search/label/five%20whys%20root%20cause%20analysis' rel='tag'>five whys root cause analysis</a>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>10 comments:</h4>
+<div class='comments-content'>
+<script async='async' src='//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = [{'id': '6696880009592133380', 'body': 'Wanted to add one additional note from the perspective of someone who was intimately involved in developing this system. \x3cBR/\x3e\x3cBR/\x3eWhen Eric writes, \x22By the time we started doing continuous integration, we had tens of thousands of lines of code, all not under test coverage.\x22  he is substantially understating how far we were from the eventual system.  \x3cBR/\x3e\x3cBR/\x3eWe had closer to several hundreds of thousands of lines of code.  Most of this code was from a variety of open source PHP projects that were glued together with the shortest path to goal possible.  Most of this was code that not scalable, not secure, and not particularly extensible.  Most of the code had an internal structure that would cause reasonable architect to conclude that the best thing to do was start a re-write project.\x3cBR/\x3e\x3cBR/\x3eNonetheless through a consistent application of root cause analysis over we migrated to a highly scalable and highly available system.', 'timestamp': '1226638740000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1226638740000#c6696880009592133380', 'author': {'name': 'Chris Hondl', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/03282556433049642012'}, 'displayTime': 'November 13, 2008 at 8:59 PM', 'deleteclass': 'item-control blog-admin pid-1918294839'}, {'id': '901515642265358469', 'body': 'Good stuff.  I picked up on the 5 whys from Joel on Software earlier this year.\x3cBR/\x3e\x3cBR/\x3eThe piece you add about committing to each stage of the process is news to me.  It should be obvious, but it\x27s often not.  Seems to be a key part of the discipline.', 'timestamp': '1226661540000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1226661540000#c901515642265358469', 'author': {'name': 'eisrael', 'avatarUrl': '//lh3.googleusercontent.com/Rw_wdkZHfDXh8tDEBFF1Q3aSS_nDE-gMVWNfOHb7a2nIp2XuWAmJyGISHv9akZE\x3ds35', 'profileUrl': 'http://sowinglight.wordpress.com/'}, 'displayTime': 'November 14, 2008 at 3:19 AM', 'deleteclass': 'item-control blog-admin pid-284451085'}, {'id': '3357644994624681784', 'body': 'Eric and Chris, you may be dismayed to hear that we don\x27t actually do 5Ys at IMVU any more.  The rigid structure was too cumbersome.\x3cBR/\x3e\x3cBR/\x3eInstead, whenever there is a failure, we have a postmortem meeting with everyone involved and come up with follow-up tasks.  These tasks are then given high priority.\x3cBR/\x3e\x3cBR/\x3eThis gives us more flexibility about how much follow up work to do, and how many levels of abstractions to take an investigation.  Fixing it at 5 was usually too many, although it was unarguably helpful at its inception, for getting us rid of some bad habits.', 'timestamp': '1226709660000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1226709660000#c3357644994624681784', 'author': {'name': 'Hitchens', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/17264560984365077588'}, 'displayTime': 'November 14, 2008 at 4:41 PM', 'deleteclass': 'item-control blog-admin pid-1933613875'}, {'id': '6342335248565778337', 'body': '@hitchens - I\x27m not dismayed at all. Five whys is a technique for continuous improvement, and it can be applied to itself as well. As long as you\x27re getting to the true root cause of each problem, including the human dimension, it really doesn\x27t matter how many questions you ask. \x22Five whys\x22 is not meant literally. \x3cBR/\x3e\x3cBR/\x3eGlad to hear the discipline continues, albeit in modified form.', 'timestamp': '1226710800000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1226710800000#c6342335248565778337', 'author': {'name': 'Eric', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/12249063135381216090'}, 'displayTime': 'November 14, 2008 at 5:00 PM', 'deleteclass': 'item-control blog-admin pid-2124945044'}, {'id': '7703163131371207611', 'body': 'The five whys methodology has been around for some time, not just as a continuous improvement technique, but as a general problem solving method in all areas of management. \x3cBR/\x3e\x3cBR/\x3eAs a management consultant who concentrates on thinking and problem solving, I use it often. But like any other tool, it is more appropriate for specific problems, and so in a general sense shouldn\x27t be used alone. It is a great supplement to other problem solving techniques, such as brainstorming, especially if you let it be a little more free form. \x3cBR/\x3eTony Wanless, Knowpreneur Consultants', 'timestamp': '1226776680000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1226776680000#c7703163131371207611', 'author': {'name': 'Tony', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/04316957347564705360'}, 'displayTime': 'November 15, 2008 at 11:18 AM', 'deleteclass': 'item-control blog-admin pid-1023482086'}, {'id': '2864519878145139025', 'body': '@\x22What started as a technical problem actually turned out to be a human and process problem.\x22\x3cBR/\x3e\x3cBR/\x3eyes yes yes a thousand times yes. it kills me how apparently most people don\x27t seem to grok that or care about it, from what empirical evidence i\x27ve seen over the years.', 'timestamp': '1226972880000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1226972880000#c2864519878145139025', 'author': {'name': 'Raoul Duke', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/07354740962526930549'}, 'displayTime': 'November 17, 2008 at 5:48 PM', 'deleteclass': 'item-control blog-admin pid-1729609290'}, {'id': '6217121817963085358', 'body': 'Love the discussion. Wish I could figure out how to apply it to the average data warehousing project which has a single shareed database right at the heart of the entire solution...\x3cBR/\x3eIt seems your cluster architecture is one of the key architectural constraints making continuous deployment possible.\x3cBR/\x3eIf you can\x27t deploy to 5% of the nodes and check the results, then how would you accomplish continuous deployment?', 'timestamp': '1234368300000', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1234368300000#c6217121817963085358', 'author': {'name': 'Anonymous', 'avatarUrl': '//img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': 'February 11, 2009 at 8:05 AM', 'deleteclass': 'item-control blog-admin pid-734927903'}, {'id': '6055548216545962264', 'body': 'my data warehouse project has a \x26quot;single shared database\x26quot; in it too (the warehouse), and plenty of databases too (post-processing stages, marts). It also has multiple environments (in addition to production). All environments run basically the same (nightly) ETL data integration pipeline - it\x26#39;s a batch process environment.\x3cbr /\x3e\x3cbr /\x3eI don\x26#39;t see how aplying Continuous Deployment (CD) to data marts (and the analytic products that depend on them) would be any different to any other online application.\x3cbr /\x3e\x3cbr /\x3eThe ETL pipeline is a batch process, so continuous deployment would always be batched-up to \x26quot;catch the next train leaving the station\x26quot;. Is that not continuous? To be honest, I\x26#39;m nervous about CD for my ETL, I guess that\x26#39;s because when it goes wrong it tends to fail completely. Our dev/test/prod routine tends catch one of these a few times a year. But also, the ETL doesn\x26#39;t change much anymore (except when integrating a new system), now that the warehouse is in production most of the change occurs in the marts and analytic products.', 'timestamp': '1245126467017', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1245126467017#c6055548216545962264', 'author': {'name': 'Anonymous', 'avatarUrl': '//img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': 'June 15, 2009 at 9:27 PM', 'deleteclass': 'item-control blog-admin pid-1587748028'}, {'id': '2977940730811058079', 'body': 'Great related post by John Shook at the Lean Enterprise Institute about technical vs. social sides of problems.\x3cbr /\x3e\x3cbr /\x3eYou\x26#39;re right to look at \x26quot;lack of training\x26quot; as a root cause (and to continue to ask why there was a lack of training). Most organizations would blame the person for not being trained, as if that\x26#39;s their fault!\x3cbr /\x3e\x3cbr /\x3ehttp://www.lean.org/shook/2009/05/is-your-technical-person-technical.html', 'timestamp': '1245534739216', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1245534739216#c2977940730811058079', 'author': {'name': 'Mark Graban', 'avatarUrl': '//4.bp.blogspot.com/_X4QtYA2Unoo/SaqezOKXYWI/AAAAAAAAEnI/FogV1RlHeI8/S45-s35/mark_graban_blog.jpg', 'profileUrl': 'https://www.blogger.com/profile/07953086531083611251'}, 'displayTime': 'June 20, 2009 at 2:52 PM', 'deleteclass': 'item-control blog-admin pid-1533722282'}, {'id': '2995877011717718572', 'body': 'The link to &#8216;cool paper&#8217; is broken, should be http://www.evanmiller.org/poisson.pdf', 'timestamp': '1276601157753', 'permalink': 'http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment\x3d1276601157753#c2995877011717718572', 'author': {'name': 'Anonymous', 'avatarUrl': '//img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': 'June 15, 2010 at 4:25 AM', 'deleteclass': 'item-control blog-admin pid-1998254540'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more!', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '7533727264507128560', 'postId': '5706065594261700106', 'feed': 'http://www.startuplessonslearned.com/feeds/5706065594261700106/comments/default', 'authorName': 'Eric', 'authorUrl': 'https://www.blogger.com/profile/12249063135381216090', 'baseUri': 'https://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+<div id='comment-holder'>
+<div id='bc_0_11C' kind='c'><div id='bc_0_11CT'><div id='bc_0_10T' class='comment-thread' kind='r'  t='0' u='0'><ol id='bc_0_10TB'><li id='bc_0_0B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c6696880009592133380' class='comment-block'><div id='bc_0_0M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/03282556433049642012'>Chris Hondl</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1226638740000#c6696880009592133380'>November 13, 2008 at 8:59 PM</a></span></div><p id='bc_0_0MC' class='comment-content'>Wanted to add one additional note from the perspective of someone who was intimately involved in developing this system. <BR/><BR/>When Eric writes, "By the time we started doing continuous integration, we had tens of thousands of lines of code, all not under test coverage."  he is substantially understating how far we were from the eventual system.  <BR/><BR/>We had closer to several hundreds of thousands of lines of code.  Most of this code was from a variety of open source PHP projects that were glued together with the shortest path to goal possible.  Most of this was code that not scalable, not secure, and not particularly extensible.  Most of the code had an internal structure that would cause reasonable architect to conclude that the best thing to do was start a re-write project.<BR/><BR/>Nonetheless through a consistent application of root cause analysis over we migrated to a highly scalable and highly available system.</p><span id='bc_0_0MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1918294839'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=6696880009592133380'>Delete</a></span></span></div><div id='bc_0_0BR' class='comment-replies'></div><div id='bc_0_0B_box' class='comment-replybox-single'></div></li><li id='bc_0_1B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/Rw_wdkZHfDXh8tDEBFF1Q3aSS_nDE-gMVWNfOHb7a2nIp2XuWAmJyGISHv9akZE=s35'></img></div><div id='c901515642265358469' class='comment-block'><div id='bc_0_1M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://sowinglight.wordpress.com/'>eisrael</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1226661540000#c901515642265358469'>November 14, 2008 at 3:19 AM</a></span></div><p id='bc_0_1MC' class='comment-content'>Good stuff.  I picked up on the 5 whys from Joel on Software earlier this year.<BR/><BR/>The piece you add about committing to each stage of the process is news to me.  It should be obvious, but it's often not.  Seems to be a key part of the discipline.</p><span id='bc_0_1MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-284451085'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=901515642265358469'>Delete</a></span></span></div><div id='bc_0_1BR' class='comment-replies'></div><div id='bc_0_1B_box' class='comment-replybox-single'></div></li><li id='bc_0_2B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c3357644994624681784' class='comment-block'><div id='bc_0_2M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/17264560984365077588'>Hitchens</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1226709660000#c3357644994624681784'>November 14, 2008 at 4:41 PM</a></span></div><p id='bc_0_2MC' class='comment-content'>Eric and Chris, you may be dismayed to hear that we don't actually do 5Ys at IMVU any more.  The rigid structure was too cumbersome.<BR/><BR/>Instead, whenever there is a failure, we have a postmortem meeting with everyone involved and come up with follow-up tasks.  These tasks are then given high priority.<BR/><BR/>This gives us more flexibility about how much follow up work to do, and how many levels of abstractions to take an investigation.  Fixing it at 5 was usually too many, although it was unarguably helpful at its inception, for getting us rid of some bad habits.</p><span id='bc_0_2MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1933613875'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=3357644994624681784'>Delete</a></span></span></div><div id='bc_0_2BR' class='comment-replies'></div><div id='bc_0_2B_box' class='comment-replybox-single'></div></li><li id='bc_0_3B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c6342335248565778337' class='comment-block'><div id='bc_0_3M' class='comment-header' kind='m'><cite class='user blog-author'><a rel='nofollow' href='https://www.blogger.com/profile/12249063135381216090'>Eric</a></cite><span class='icon user blog-author'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1226710800000#c6342335248565778337'>November 14, 2008 at 5:00 PM</a></span></div><p id='bc_0_3MC' class='comment-content'>@hitchens - I'm not dismayed at all. Five whys is a technique for continuous improvement, and it can be applied to itself as well. As long as you're getting to the true root cause of each problem, including the human dimension, it really doesn't matter how many questions you ask. "Five whys" is not meant literally. <BR/><BR/>Glad to hear the discipline continues, albeit in modified form.</p><span id='bc_0_3MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-2124945044'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=6342335248565778337'>Delete</a></span></span></div><div id='bc_0_3BR' class='comment-replies'></div><div id='bc_0_3B_box' class='comment-replybox-single'></div></li><li id='bc_0_4B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c7703163131371207611' class='comment-block'><div id='bc_0_4M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/04316957347564705360'>Tony</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1226776680000#c7703163131371207611'>November 15, 2008 at 11:18 AM</a></span></div><p id='bc_0_4MC' class='comment-content'>The five whys methodology has been around for some time, not just as a continuous improvement technique, but as a general problem solving method in all areas of management. <BR/><BR/>As a management consultant who concentrates on thinking and problem solving, I use it often. But like any other tool, it is more appropriate for specific problems, and so in a general sense shouldn't be used alone. It is a great supplement to other problem solving techniques, such as brainstorming, especially if you let it be a little more free form. <BR/>Tony Wanless, Knowpreneur Consultants</p><span id='bc_0_4MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1023482086'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=7703163131371207611'>Delete</a></span></span></div><div id='bc_0_4BR' class='comment-replies'></div><div id='bc_0_4B_box' class='comment-replybox-single'></div></li><li id='bc_0_5B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c2864519878145139025' class='comment-block'><div id='bc_0_5M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/07354740962526930549'>Raoul Duke</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1226972880000#c2864519878145139025'>November 17, 2008 at 5:48 PM</a></span></div><p id='bc_0_5MC' class='comment-content'>@"What started as a technical problem actually turned out to be a human and process problem."<BR/><BR/>yes yes yes a thousand times yes. it kills me how apparently most people don't seem to grok that or care about it, from what empirical evidence i've seen over the years.</p><span id='bc_0_5MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1729609290'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=2864519878145139025'>Delete</a></span></span></div><div id='bc_0_5BR' class='comment-replies'></div><div id='bc_0_5B_box' class='comment-replybox-single'></div></li><li id='bc_0_6B' class='comment' kind='b'><div class='avatar-image-container'><img src='//img1.blogblog.com/img/blank.gif'></img></div><div id='c6217121817963085358' class='comment-block'><div id='bc_0_6M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1234368300000#c6217121817963085358'>February 11, 2009 at 8:05 AM</a></span></div><p id='bc_0_6MC' class='comment-content'>Love the discussion. Wish I could figure out how to apply it to the average data warehousing project which has a single shareed database right at the heart of the entire solution...<BR/>It seems your cluster architecture is one of the key architectural constraints making continuous deployment possible.<BR/>If you can't deploy to 5% of the nodes and check the results, then how would you accomplish continuous deployment?</p><span id='bc_0_6MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-734927903'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=6217121817963085358'>Delete</a></span></span></div><div id='bc_0_6BR' class='comment-replies'></div><div id='bc_0_6B_box' class='comment-replybox-single'></div></li><li id='bc_0_7B' class='comment' kind='b'><div class='avatar-image-container'><img src='//img1.blogblog.com/img/blank.gif'></img></div><div id='c6055548216545962264' class='comment-block'><div id='bc_0_7M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1245126467017#c6055548216545962264'>June 15, 2009 at 9:27 PM</a></span></div><p id='bc_0_7MC' class='comment-content'>my data warehouse project has a &quot;single shared database&quot; in it too (the warehouse), and plenty of databases too (post-processing stages, marts). It also has multiple environments (in addition to production). All environments run basically the same (nightly) ETL data integration pipeline - it&#39;s a batch process environment.<br /><br />I don&#39;t see how aplying Continuous Deployment (CD) to data marts (and the analytic products that depend on them) would be any different to any other online application.<br /><br />The ETL pipeline is a batch process, so continuous deployment would always be batched-up to &quot;catch the next train leaving the station&quot;. Is that not continuous? To be honest, I&#39;m nervous about CD for my ETL, I guess that&#39;s because when it goes wrong it tends to fail completely. Our dev/test/prod routine tends catch one of these a few times a year. But also, the ETL doesn&#39;t change much anymore (except when integrating a new system), now that the warehouse is in production most of the change occurs in the marts and analytic products.</p><span id='bc_0_7MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1587748028'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=6055548216545962264'>Delete</a></span></span></div><div id='bc_0_7BR' class='comment-replies'></div><div id='bc_0_7B_box' class='comment-replybox-single'></div></li><li id='bc_0_8B' class='comment' kind='b'><div class='avatar-image-container'><img src='//4.bp.blogspot.com/_X4QtYA2Unoo/SaqezOKXYWI/AAAAAAAAEnI/FogV1RlHeI8/S45-s35/mark_graban_blog.jpg'></img></div><div id='c2977940730811058079' class='comment-block'><div id='bc_0_8M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/07953086531083611251'>Mark Graban</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1245534739216#c2977940730811058079'>June 20, 2009 at 2:52 PM</a></span></div><p id='bc_0_8MC' class='comment-content'>Great related post by John Shook at the Lean Enterprise Institute about technical vs. social sides of problems.<br /><br />You&#39;re right to look at &quot;lack of training&quot; as a root cause (and to continue to ask why there was a lack of training). Most organizations would blame the person for not being trained, as if that&#39;s their fault!<br /><br />http://www.lean.org/shook/2009/05/is-your-technical-person-technical.html</p><span id='bc_0_8MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1533722282'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=2977940730811058079'>Delete</a></span></span></div><div id='bc_0_8BR' class='comment-replies'></div><div id='bc_0_8B_box' class='comment-replybox-single'></div></li><li id='bc_0_9B' class='comment' kind='b'><div class='avatar-image-container'><img src='//img1.blogblog.com/img/blank.gif'></img></div><div id='c2995877011717718572' class='comment-block'><div id='bc_0_9M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://www.startuplessonslearned.com/2008/11/five-whys.html?showComment=1276601157753#c2995877011717718572'>June 15, 2010 at 4:25 AM</a></span></div><p id='bc_0_9MC' class='comment-content'>The link to &#8216;cool paper&#8217; is broken, should be http://www.evanmiller.org/poisson.pdf</p><span id='bc_0_9MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1998254540'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=7533727264507128560&amp;postID=2995877011717718572'>Delete</a></span></span></div><div id='bc_0_9BR' class='comment-replies'></div><div id='bc_0_9B_box' class='comment-replybox-single'></div></li></ol><div id='bc_0_10I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Add comment</a></div><div id='bc_0_10T_box' class='comment-replybox-thread'></div><div id='bc_0_10L' class='loadmore loaded' kind='rb'><a href='javascript:;' target='_self'>Load more...</a></div></div></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=7533727264507128560&postID=5706065594261700106' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/645330703-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+<a name='links'></a><h4><!--Can't find substitution for tag [post.backlinksLabel]--></h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog1_backlinks-create-link' target='_blank'><!--Can't find substitution for tag [post.createLinkLabel]--></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://www.startuplessonslearned.com/2008/11/four-kinds-of-work-and-how-to-get-them.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://www.startuplessonslearned.com/2008/11/where-did-silicon-valley-come-from.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://www.startuplessonslearned.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://www.startuplessonslearned.com/feeds/5706065594261700106/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type='text/javascript'>
+    window.___gcfg = { 'lang': 'en' };
+  </script>
+</div></div>
+</div></div>
+<div id='sidebar-wrap'>
+<div id='sidebartop-wrap'><div id='sidebartop-wrap2'>
+<div class='sidebar section' id='sidebartop'><div class='widget HTML' data-version='1' id='HTML10'>
+<h2 class='title'>Lean Startup Book</h2>
+<div class='widget-content'>
+<div id="lsu_book_cta">
+	<a href="http://theleanstartup.com/book" target="_blank">Lean Startup Book - How Today's Entrenpreneurs Use Continuous Innovation to Create Radically Successfull Businesses</a>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML10&action=editWidget&sectionId=sidebartop' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML10"));' target='configHTML10' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div></div>
+<div id='sidebarmid-wrap'><div id='sidebarmid-wrap2'>
+<div class='sidebar section' id='sidebarmid'><div class='widget HTML' data-version='1' id='HTML1'>
+<h2 class='title'>Get New Essays By Email</h2>
+<div class='widget-content'>
+<div id="lsu_email_signup">
+    <script type="text/javascript">
+    function clearText(thefield){
+        if (thefield.defaultValue == thefield.value) {
+            thefield.value = "";
+        }else if (thefield.value == "") {
+            thefield.value = thefield.defaultValue;
+        }
+    } 
+    </script>
+    <form action="http://www.feedburner.com/fb/a/emailverify" style="text-align:center;" target="popupwindow" method="post" onsubmit="window.open('http://www.feedburner.com/fb/a/emailverifySubmit?feedId=2438276', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <h4>Get New Essays by Email</h4>
+        <p><input id="sll_subscribe_email" name="email" type="text" value="email address" onfocus="clearText(this)" onblur="clearText(this)" /></p>
+        <input value="http://feeds.feedburner.com/~e?ffid=2438276" name="url" type="hidden"/>
+        <input value="Lessons Learned" name="title" type="hidden"/>
+        <input value="en_US" name="loc" type="hidden"/>
+        <input id="sll_subscribe_button" value="Subscribe" type="image" src="http://www.theleanstartup.com/images/blog/btn_join.png" />
+        <span id="google_reader_span">or</span>
+        <p style="text-align:center;"><a id="rss_feed" href="http://feeds.feedburner.com/startup/lessons/learned" target="_blank"><img border="0" alt="Rss" src="http://theleanstartup.com/images/rss-icon.png"/> RSS Feed</a></p>
+    </form>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebarmid' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div></div>
+<div id='sidebarbottom-wrap1'><div id='sidebarbottom-wrap2'>
+<div class='sidebar section' id='sidebar'><div class='widget HTML' data-version='1' id='HTML6'>
+<h2 class='title'>About The Author</h2>
+<div class='widget-content'>
+<div id="lsu_about_the_author" class="lsu-white-sidebar">
+	<div class="lsu-inner">
+		<h4>About the Author</h4>
+		<p><strong>Eric Ries</strong> is an entrepreneur and author of Startup Lessons Learned. He cofounded and served as CTO of IMVU. His...</p>
+		<p><a href="http://www.startuplessonslearned.com/2008/10/about-author.html">Read the bio</a></p>
+	</div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML6&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML6"));' target='configHTML6' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML4'>
+<div id="lsu_design_by" class="lsu-white-sidebar">
+	<div class="lsu-inner">
+		<a href="http://www.dtelepathy.com" target="_blank">User Experience Design Company</a>
+	</div>
+</div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/'>
+2017
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2017/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/'>
+2016
+</a>
+<span class='post-count' dir='ltr'>(9)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2016/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/'>
+2015
+</a>
+<span class='post-count' dir='ltr'>(16)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2015/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/'>
+2014
+</a>
+<span class='post-count' dir='ltr'>(9)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2014/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/'>
+2013
+</a>
+<span class='post-count' dir='ltr'>(34)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2013/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/'>
+2012
+</a>
+<span class='post-count' dir='ltr'>(26)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2012/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/'>
+2011
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2011/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/'>
+2010
+</a>
+<span class='post-count' dir='ltr'>(50)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2010/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/'>
+2009
+</a>
+<span class='post-count' dir='ltr'>(88)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/07/'>
+July
+</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/06/'>
+June
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/05/'>
+May
+</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/04/'>
+April
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/03/'>
+March
+</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/02/'>
+February
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2009/01/'>
+January
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2008/'>
+2008
+</a>
+<span class='post-count' dir='ltr'>(59)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2008/12/'>
+December
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2008/11/'>
+November
+</a>
+<span class='post-count' dir='ltr'>(14)</span>
+<ul class='posts'>
+<li><a href='http://www.startuplessonslearned.com/2008/11/abcdefs-of-conducting-technical.html'>The ABCDEF&#39;s of conducting a technical interview</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/net-promoter-score-operational-tool-to.html'>Net Promoter Score: an operational tool to measure...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/lo-my-1032-subscribers-who-are-you.html'>Lo, my 1032 subscribers, who are you?</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/sciencedaily-corporate-culture-is-most.html'>ScienceDaily: Corporate culture is most important ...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/four-kinds-of-work-and-how-to-get-them_18.html'>The four kinds of work, and how to get them done: ...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/four-kinds-of-work-and-how-to-get-them.html'>The four kinds of work, and how to get them done: ...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/five-whys.html'>Five Whys</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/where-did-silicon-valley-come-from.html'>Where did Silicon Valley come from?</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/what-is-customer-development.html'>What is customer development?</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/using-adwords-to-assess-demand-for-your.html'>Using AdWords to assess demand for your new online...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/steveys-blog-rants-good-agile-bad-agile.html'>Stevey&#39;s Blog Rants: Good Agile, Bad Agile</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/learning-from-obama-maneuver-warfare-on.html'>Learning from Obama: maneuver warfare on the campa...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/getting-educated-about-advertising.html'>Getting educated about advertising, agencies, and ...</a></li>
+<li><a href='http://www.startuplessonslearned.com/2008/11/principles-of-lean-startups.html'>Principles of Lean Startups, presentation for Mapl...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2008/10/'>
+October
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2008/09/'>
+September
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://www.startuplessonslearned.com/2008/08/'>
+August
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<h2>Popular Posts</h2>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<div class='item-content'>
+<div class='item-thumbnail'>
+<a href='http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html' target='_blank'>
+<img alt='' border='0' src='https://lh3.googleusercontent.com/proxy/aIR0utfaFl9ddg20gyzuh-Fp93movpXw5hBugHNaN_JhgCLRjvJUnkzkTQKJquloL299wWCyN4iVMWF9wwf9s7cTyinYLPqzs8CreCCEE6levOlvh-B6EkBrM0LFlHsHmw=w72-h72-p-k-no-nu'/>
+</a>
+</div>
+<div class='item-title'><a href='http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html'>Minimum Viable Product: a guide</a></div>
+<div class='item-snippet'>One of the most important lean startup  techniques is called the minimum viable product . Its power is matched only by the amount of confusi...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-thumbnail'>
+<a href='http://www.startuplessonslearned.com/2008/11/what-is-customer-development.html' target='_blank'>
+<img alt='' border='0' src='https://lh4.googleusercontent.com/proxy/WK9xuxwT1npBlfjAYiilqvhhT6qOoQqK63T-liEqJz8_SkwHfmi5fTE_7FvnJ2p1XN8u78_MKwI9SrZPNXv_ABRSBjuMAqaZQAflpN0NT6oqenDyLDei=w72-h72-p-k-no-nu'/>
+</a>
+</div>
+<div class='item-title'><a href='http://www.startuplessonslearned.com/2008/11/what-is-customer-development.html'>What is customer development?</a></div>
+<div class='item-snippet'>When we build products, we use a methodology. For software, we have many - you can enjoy a nice long list  on Wikipedia. But too often when ...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://www.startuplessonslearned.com/2008/09/what-does-startup-cto-actually-do.html'>What does a startup CTO actually do?</a></div>
+<div class='item-snippet'>What does your Chief Technology Officer do all day? Often times, it seems like people are thinking it&#39;s synonymous with &quot;that guy w...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li>
+<div class='item-content'>
+<div class='item-title'><a href='http://www.startuplessonslearned.com/2008/09/lean-startup.html'>The lean startup</a></div>
+<div class='item-snippet'>( Update April, 2011:  In September, 2008 I wrote the following post in which I published my thoughts on the term &quot; lean startup &quot;...</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target='configPopularPosts1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML3'>
+<h2 class='title'>Recent &amp; Upcoming Events</h2>
+<div class='widget-content'>
+<div id="lsu_events" class="lsu-white-sidebar">
+	<div class="lsu-inner">
+		<ul>
+			<!--<li>
+				<div class="item-title">Event Title</div>
+				<div class="item-date">September 24, 2011</div>
+				<div class="item-snippet">Event description goes here with <a href="#">links</a> etc.</div>
+			</li>-->
+			<li>
+				<div class="item-title">Plancast</div>
+				<div class="item-snippet">I am experimenting with using <a href="http://plancast.com/ericries" target="_blank">Plancast</a> to track my event schedule. <a href="http://plancast.com/ericries" target="_blank">Take a look</a> and let me know what you think.</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML7'>
+<h2 class='title'>Recommended Reading</h2>
+<div class='widget-content'>
+<script charset="utf-8" type="text/javascript" src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822/US/lessolearn01-20/8001/d3df3972-6f2a-4a7a-bc1e-7470e2e31782"> </script> <noscript><a href="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Flessolearn01-20%2F8001%2Fd3df3972-6f2a-4a7a-bc1e-7470e2e31782&Operation=NoScript">Amazon.com Widgets</a></noscript>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML7&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML7"));' target='configHTML7' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML5'>
+<h2 class='title'>Facebook Fans</h2>
+<div class='widget-content'>
+<div id="lsu_facebook">
+	<script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US"></script><script type="text/javascript">FB.init("4795e7f579b69e4e1fbbd5119cbc5119");</script><fb:fan profile_id="279359676992" stream="0" connections="10" logobar="0" width="316" height="265"></fb:fan>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML5&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target='configHTML5' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML8'>
+<h2 class='title'>@ericries on Twitter</h2>
+<div class='widget-content'>
+<div id="lsu_twitter">
+	<h4>@ericries on Twitter</h4>
+	<ul id="twitter_update_list"></ul>
+	<a id="twitter-link" style="display:block;text-align:right;" href="http://twitter.com/ericries">visit twitter</a>
+	<script src="http://twitter.com/javascripts/blogger.js" type="text/javascript"></script>
+	<script src="http://twitter.com/statuses/user_timeline/ericries.json?callback=twitterCallback2&amp;count=5" type="text/javascript"></script>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML8&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML8"));' target='configHTML8' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML9'>
+<h2 class='title'>outbrain</h2>
+<div class='widget-content'>
+<input value="1WJ5nP21QUxbdi3SzOWzrw==" name="OBKey" type="hidden"/><script language="JavaScript">var OB_platformType =1;var OB_demoMode = false;var OB_langJS = "http://widgets.outbrain.com/lang_en.js";var OBITm = "1230919908931";</script><script src="http://widgets.outbrain.com/OutbrainRater.js" type="text/javascript"> </script><script type="text/javascript">var OBCTm=1230919908931; </script><script src="http://widgets.outbrain.com/claim.js"> </script>
+<a href="http://captable.io">Manage your startup's Cap Table?</a> try <a href="https://captable.io/" title="Captable.io is an online tool for managing your startup's stock, paperlessly." target="_blank">Cap table modeling for startups</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=7533727264507128560&widgetType=HTML&widgetId=HTML9&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML9"));' target='configHTML9' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div></div>
+</div>
+<div id='footer-wrap1'><div id='footer-wrap2'>
+<div class='footer no-items section' id='footer'></div>
+</div></div>
+</div>
+<div id='lsu_sketches'></div>
+<script type='text/javascript'>
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type='text/javascript'>
+var pageTracker = _gat._getTracker("UA-5553360-1");
+pageTracker._trackPageview();
+</script>
+<!-- +disqus -->
+<!-- -disqus -->
+<script src='//www.hellobar.com/hellobar.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    new HelloBar(6066,9037);
+</script>
+<noscript>
+    The Hello Bar is a simple <a href='https://www.hellobar.com'>notification bar</a> that engages users and communicates a call to action.
+</noscript>
+<script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1929302928-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY7tT018Y4k4fbQaVvOPFV6aoiP95g:1509184692305';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d7533727264507128560','//www.startuplessonslearned.com/2008/11/five-whys.html','7533727264507128560');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '7533727264507128560', 'title': 'Lessons Learned', 'url': 'http://www.startuplessonslearned.com/2008/11/five-whys.html', 'canonicalUrl': 'http://www.startuplessonslearned.com/2008/11/five-whys.html', 'homepageUrl': 'http://www.startuplessonslearned.com/', 'searchUrl': 'http://www.startuplessonslearned.com/search', 'canonicalHomepageUrl': 'http://www.startuplessonslearned.com/', 'blogspotFaviconUrl': 'http://www.startuplessonslearned.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': false, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Lessons Learned - Atom\x22 href\x3d\x22http://www.startuplessonslearned.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Lessons Learned - RSS\x22 href\x3d\x22http://www.startuplessonslearned.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Lessons Learned - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/7533727264507128560/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Lessons Learned - Atom\x22 href\x3d\x22http://www.startuplessonslearned.com/feeds/5706065594261700106/comments/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/a0ff9c4e26f0f32f', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Share to Google+', 'target': 'googleplus'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '5706065594261700106', 'pageName': 'Five Whys', 'pageTitle': 'Lessons Learned: Five Whys'}}, {'name': 'features', 'data': {'lazy_images': 'false', 'unsupported_browser_message': 'false', 'lightbox_img_parsing': 'true', 'video_theatre_support': 'true', 'sharing_get_link_dialog': 'false', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Five Whys', 'description': 'Taiichi Ohno was one of the inventors of the Toyota Production System. His book Toyota Production System: Beyond Large-Scale Production  is ...', 'url': 'http://www.startuplessonslearned.com/2008/11/five-whys.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 5706065594261700106}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'crosscol', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '5706065594261700106', 'useNgc': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3160141751-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML10', 'sidebartop', null, document.getElementById('HTML10'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebarmid', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'sidebar', null, document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML7', 'sidebar', null, document.getElementById('HTML7'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML8', 'sidebar', null, document.getElementById('HTML8'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'sidebar', null, document.getElementById('HTML9'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>
